@@ -1,0 +1,10 @@
+FLASK-
+1. virtual env                     V
+2. intro to flask                  V
+3. templates                      V
+4. database                       V 
+5. forms                            V
+6. authentication                 V
+7.files uploading                 V
+8. update posts                  V
+
