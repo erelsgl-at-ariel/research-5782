@@ -2,39 +2,88 @@
 
 # רשימת מאמרים
 
-כאן תהיה רשימת המאמרים שניתן לבחור לצורך הקורס.
-הרשימה הנוכחית היא חלקית בלבד - הרשימה תתעדכן לקראת תחילת הקורס.
+## מאמרים חדשים
+
+ניתן למצוא מאמרים חדשים בסיכומי הכנסים שהתקיימו בשנים האחרונות. יש לבחור מאמר שיש בו אלגוריתם שאפשר לתכנת:
+
+* [גיאומטריה חישובית 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16186)
+* [יסודות מדעי המחשב 2021](https://focs2021.cs.colorado.edu/focs-2021-accepted-papers/)
+* [כלכלה וחישוב 2021](https://scholar.google.com/scholar?q=source%3A%22Economics+and+Computation%22&hl=iw&as_sdt=0%2C5&as_ylo=2021&as_yhi=2021)
+* [אלגוריתמים וחישוב 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16217)
+* [תיכנות אילוצים 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16213)
+* [אלגוריתמים מקורבים ואקראיים 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16208)
+* [אלגוריתמים 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16206)
+* [אוטומטים, שפות ותיכנות 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16196)
+* [אלגוריתמים ניסיוניים 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16185)
+* [הוכחות אינטראקטיביות 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16189)
+* [התאמת דגמים 2021](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16191)
+
+לחילופין, אפשר לבחור מאמר ישן יותר מהרשימה למטה:
+
+## אלגוריתמים בגרפים
+
+1. [Priority maximum matching](https://arxiv.org/abs/1512.08555) - שידוך גדול ביותר עם עדיפויות.
+
+1. [Cycle packing](https://www.worldscientific.com/doi/abs/10.1142/S1793830909000373) - אריזת מעגלים.
+
+1. [Envy-free matching](https://arxiv.org/abs/1901.09527)- שידוך ללא קנאה
+
+1. [Fair division of a graph](https://arxiv.org/abs/1705.10239) - פרק 5 - חלוקה הוגנת של גרף.
+
+1. [Fair network flow](https://arxiv.org/abs/1907.02673) - זרימה הוגנת.
+
+1. [Rainbow matching](https://link.springer.com/article/10.1007/s00453-018-0497-3) - שידוך צבעוני.
+
+1. [Contiguous oriented labeling](https://arxiv.org/pdf/1910.14129.pdf#subsection.4.1) - סימון תוויות קשיר.
+
+1. [Fair dissections](https://onlinelibrary.wiley.com/doi/abs/10.1002/net.3230200305) - חיתוך הוגן של גרף.
+
+1. [Fractional matchings](https://www.sciencedirect.com/science/article/pii/0166218X9290273D) - שידוך שברי.
+
+
+## תזמון תהליכים
+
+המאמרים הבאים מציגים אלגוריתמים לתזמון יעיל של תהליכים על מכונות - 
+בעיה שימושית מאד בתעשיה.
+
+1. [An Application of Bin-Packing to Multiprocessor Scheduling](https://epubs.siam.org/doi/abs/10.1137/0207001) - ליחיד.
+
+1. [Using dual approximation algorithms for scheduling problems](https://doi.org/10.1145/7531.7535) - פרקים 1--4 (עמודים 1--12). ליחיד או לזוג.
+
+1. [Approximation schemes for scheduling on parallel machines](https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291099-1425%28199806%291%3A1%3C55%3A%3AAID-JOS2%3E3.0.CO%3B2-J). ליחיד: פרקים 1--2. לזוג: פרקים 1--4.
+
+
+
+## חלוקת מספרים
+
+המאמרים הבאים מציגים אלגוריתמים לפתרון בעיית "חלוקת המספרים".
+
+
+
+
 
 ## אופטימיזציה
 
-1. [When Does a Dynamic Programming Formulation Guarantee the Existence of a FPTAS?](https://pubsonline.informs.org/doi/abs/10.1287/ijoc.12.1.57.11901) - המטרה היא לכתוב קוד כללי לתיכנות דינאמי, שיכול לפתור בעיות אופטימיזציה רבות, ולהפוך אותו לאלגוריתם קירוב לפי המתכון שבמאמר. 
+1. [On the lexicographic minimax approach to location problems](https://www.sciencedirect.com/science/article/abs/pii/S0377221796001543) - אלגוריתם לקביעת מיקום של מפעל ציבורי.
 
-2. [Leximin order](https://en.wikipedia.org/wiki/Leximin_order) - הוספת אלגוריתם אופטימיזציה לספריה `cvxpy`.
+
+
 
 
 ## בחירות
 
-1. [Proportionality Degree of Multiwinner Rules](https://dl.acm.org/doi/abs/10.1145/3465456.3467641?casa_token=j82b2ROH-54AAAAA:OpSW_y7_q9GtUNsaaIhm41whcCTK9fKz69MYBiy4RfYp7Bg-1-2rdT8oDjwKxxBOnSJq6Bktig89ag) - הרעיון הוא לחשב עד כמה תוצאות הבחירות מייצגות את דעת הציבור. צריך לכתוב קוד שמחשב את רמת הפרופורציונליות של בחירות, ולהריץ אותו על סקר דעת קהל שבוצע לאחרונה בישראל.
+1. 
 
 
-## תורת הגרפים
-
-1. [Envy-free Matchings in Bipartite Graphs and their Applications to Fair Division](https://arxiv.org/abs/1901.09527) - אלגוריתם לחישוב שידוך ללא-קנאה גדול ביותר, וכמה אלגוריתמים לחלוקה הוגנת המשתמשים בו. יש לתכנת את האלגוריתם ולשלב אותו בספריה `networkx`.
-
-2. [Maximium Priority Matchings](https://arxiv.org/abs/1512.08555), [Faster Maximium Priority Matchings in Bipartite Graphs](https://arxiv.org/abs/1512.09349) - אלגוריתמים לחישוב שידוך בגרף, עם עדיפויות. יש לתכנת את האלגוריתמים ולשלב אותם בספריה `networkx`. יכול להתאים לשני סטודנטים.
-
-3. [Meshulam's game](https://en.wikipedia.org/wiki/Meshulam's_game) - משחק לשני שחקנים על גרף. יש לתכנת את המשחק ולבנות לו ממשק שיאפשר להריץ אותו על גרפים שונים. כמו כן, לחשב את האסטרטגיה האופטימלית על כל גרף, ולשלב בספריה `networkx`. מתאים לסטודנטים עם כישרון מתימטי.
 
 ## חלוקה הוגנת
 
-1. [Fair division with subsidy](https://link.springer.com/chapter/10.1007/978-3-030-30473-7_25),  [One Dollar Each Eliminates Envy](https://dl.acm.org/doi/10.1145/3391403.3399447) - אלגוריתמים לחלוקה ללא-קנאה עם סובסידיה. יש לתכנת אותם, לשלב בספריה `fairpy`, ולהשוות ביניהם. 
+אלגוריתמי חלוקה הוגנת המתאימים לשילוב בספריה `fairpy`.
+
+1. [Fair division with subsidy](https://link.springer.com/chapter/10.1007/978-3-030-30473-7_25),  [One Dollar Each Eliminates Envy](https://dl.acm.org/doi/10.1145/3391403.3399447) - אלגוריתמים לחלוקה ללא-קנאה עם סובסידיה. יש לתכנת אותם, , ולהשוות ביניהם. 
 יכול להתאים לשני סטודנטים.
 
-2. [Max-min item allocation](https://en.wikipedia.org/wiki/Max-min_item_allocation) - לקרוא על אלגוריתמים שונים לחלוקה שיוויונית של חפצים, לממש אותם בספריה `fairpy` ולהשוות ביניהם. יכול להתאים לשני סטודנטים.
-
-3. [Picking Sequences and Monotonicity in Weighted Fair Division](https://arxiv.org/abs/2104.14347) - אלגוריתמים לחלוקה ללא-קנאה עם זכויות שונות. יש לתכנת אותם, לשלב בספריה `fairpy`, ולהשוות ביניהם. 
-יכול להתאים לשני סטודנטים.
-
+2. [Max-min item allocation](https://en.wikipedia.org/wiki/Max-min_item_allocation) - לקרוא על אלגוריתמים שונים לחלוקה שיוויונית של חפצים, לממש אותם בספריה `fairpy` ולהשוות ביניהם. יכול להתאים לשני סטודנטים או יותר.
 
 
 
