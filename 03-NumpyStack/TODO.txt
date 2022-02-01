@@ -1,7 +1,0 @@
-1. numpy           V
-2. scipy              V            
-3. networkx       V
-4. panda            V
-5. matplotlib       V
-    * TODO: sub-plots; save plot to file
-6. cvxpy             V
