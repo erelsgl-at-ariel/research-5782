@@ -11,5 +11,8 @@ This is an example text file in reStructuredText format.  First import
 
 Now use it:
 
+    >>> factorial(3)
+    6
+
     >>> factorial(6)
     120

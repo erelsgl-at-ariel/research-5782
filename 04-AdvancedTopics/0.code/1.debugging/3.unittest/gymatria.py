@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*
 class Gymatria:
 
@@ -89,14 +88,3 @@ class Gymatria:
                     val+= 100 
                 else: val+=1
 
-
-if __name__ == "__main__":
-    aba = Gymatria('אבא')
-    aima = Gymatria('אמא')
-    print(aba)
-    print(aima)
-    print(f'אבא+אמא בגימטריה = {aima+aba}')
-    print(f'אבא-אמא בגימטריה = {aba-aima}')
-    print(f'אבא*אמא בגימטריה = {aima*aba}')
-    print(aba + 3) #=> 7
-    print(aba + 7.5) #=> 11
