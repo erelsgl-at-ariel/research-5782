@@ -12,7 +12,8 @@ setuptools.setup(
     name='example_pypi_package_5782',
     version=__version__,
 
-    packages=setuptools.find_packages(exclude=["tests"]),
+    # packages=setuptools.find_packages(exclude=["tests"]),
+    packages=setuptools.find_packages(),
     install_requires=REQUIRES,
 
     author='Tom Chen',
@@ -55,6 +56,7 @@ setuptools.setup(
 )
 
 # Build:
+#   [delete old folders: build, dist, test_env]
 #   python setup.py sdist bdist_wheel
 
 
@@ -63,3 +65,12 @@ setuptools.setup(
 
 # Publish to real PyPI:
 #   twine upload --repository pypi dist/*
+
+
+# Test in a virtual environment:
+#    cd ..
+#    virtualenv test_env
+#    test_env\Scripts\activate
+#    pip install numpy
+#    pip install -i https://test.pypi.org/simple/ example-pypi-package-5782
+#    pytest test_env\Lib\site-packages\examplepy
