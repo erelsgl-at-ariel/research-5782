@@ -19,4 +19,10 @@
     - source archive
     - wheels
     - TestPyPI
+
+כתב: מעוז גרוסמן.
+
+לפרטים נוספים ראו:
+
+[חבילה לדוגמה](https://pypi.org/project/example-pypi-package/).
 </div>

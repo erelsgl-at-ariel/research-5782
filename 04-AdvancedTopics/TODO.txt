@@ -1,12 +1,1 @@
-﻿0. debug:
-	►unitest                     V
-	►logs                        V
-	►doctest         	    V
-1.regex                                   V
-2.threads and multy threads      V
-3.sqlite			    V
-4.run time improvment: 
-	► cython                    V
-	► pypy                       v
-	► numba                    v
-5. web scraping ?
+﻿5. web scraping ?
