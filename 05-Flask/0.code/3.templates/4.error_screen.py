@@ -12,7 +12,7 @@ users = [
 
 @app.route('/')
 def hello():
-    return render_template('dynamic-layou.html' , users = users)
+    return render_template('dynamic-layou.html' , users = users) # No such file in templates/ folder
 
 if __name__ == '__main__':
     app.run(debug = True)

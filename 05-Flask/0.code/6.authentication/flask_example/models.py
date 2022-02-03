@@ -1,16 +1,19 @@
-from datetime import datetime
-from flask_example import db , login_manager
-from flask_login import UserMixin
+# Now, we added a 'password' field and removed the unused 'phone' field from the 'user' table.
+# We also added a support for the login manager.
 
-@login_manager.user_loader
+from datetime import datetime
+from flask_example import db, login_manager  ### New
+import flask_login 
+
+@login_manager.user_loader   # Defines a function that loads the given user id from the DB.
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-class User(db.Model,UserMixin):
+class User(db.Model,flask_login.UserMixin):   # Double inheritance: db.Model, and flask_login.UserMixin
     id = db.Column(db.Integer , primary_key= True)
     username = db.Column(db.String(20) , unique=True, nullable = False)
     email = db.Column(db.String(20) , unique=True, nullable = False)
-    password = db.Column(db.String(60), nullable=False)
+    password = db.Column(db.String(60), nullable=False)   ### New
     profile_img = db.Column(db.String(20), nullable= False , default='default.jpg')
     posts = db.relationship('Post', backref='author', lazy=True)
 

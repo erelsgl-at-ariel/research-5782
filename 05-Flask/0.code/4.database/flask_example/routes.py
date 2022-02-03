@@ -1,6 +1,7 @@
+# We put in 'routes.py' all code related to routing clients to pages. 
+
 from flask import render_template
 from flask_example import app
-from flask_example.models import User , Post
 
 users = [
     {'name': 'Joee Javany',

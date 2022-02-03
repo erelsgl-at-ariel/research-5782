@@ -1,6 +1,9 @@
+# Here, we import the forms, since they are used for routing.
+# We also add routing to the registration and the login pages.
+
 from flask import render_template, url_for, flash, redirect
 from flask_example import app
-from flask_example.forms import RegistrationForm, LoginForm
+from flask_example.forms import RegistrationForm, LoginForm  ###
 from flask_example.models import User , Post
 
 users = [
@@ -35,3 +38,4 @@ def login():
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
+

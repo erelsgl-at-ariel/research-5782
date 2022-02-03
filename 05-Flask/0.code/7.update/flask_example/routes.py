@@ -1,6 +1,8 @@
+# This time, we design the "account update" page, and allow to upload a new profile picture.
+
 import os
 import secrets
-from PIL import Image
+from PIL import Image  # To resize the uploaded profile pics
 from flask import render_template, url_for, flash, redirect ,request
 from flask_example import app, db, bcrypt
 from flask_example.forms import RegistrationForm, LoginForm , UpdateAccountForm
@@ -56,7 +58,7 @@ def logout():
     return redirect(url_for('home'))
 
 def save_picture(form_picture):
-    random_hex = secrets.token_hex(8)
+    random_hex = secrets.token_hex(8)  # random name with 16 digits (8 hex numbers)
     _, f_ext = os.path.splitext(form_picture.filename)
     picture_fn = random_hex + f_ext
     picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
@@ -72,7 +74,7 @@ def save_picture(form_picture):
 @login_required
 def account():
     form = UpdateAccountForm()
-    if form.validate_on_submit():
+    if form.validate_on_submit():  # POST
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
             current_user.profile_img = picture_file
@@ -81,8 +83,9 @@ def account():
         db.session.commit()
         flash('Your account has been updated!', 'success')
         return redirect(url_for('account'))
-    elif request.method == 'GET':
+    elif request.method == 'GET': # GET: Automatically put the current username and email in the form fields.
         form.username.data = current_user.username
         form.email.data = current_user.email
     image_file = url_for('static' , filename= f'profile_pics/{current_user.profile_img}')
     return render_template('account.html', title='Account', image_file = image_file , form = form)
+

@@ -1,3 +1,6 @@
+# Finally, we add a route for creating a new post.
+# We also show the new posts in the home page.
+
 import os
 import secrets
 from PIL import Image
@@ -11,7 +14,7 @@ from flask_login import login_user , current_user , logout_user ,login_required
 @app.route("/")
 @app.route("/home")
 def home():
-    posts = Post.query.all()
+    posts = Post.query.all()   # New
     return render_template('home.html', posts=posts)
 
 @app.route("/register", methods=['GET', 'POST'])

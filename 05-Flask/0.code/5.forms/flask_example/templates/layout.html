@@ -1,3 +1,4 @@
+<!-- Here, we added the get_flashed_messages section -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -57,13 +58,13 @@
           {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
             {% for category, message in messages %}
-              <div class="alert alert-{{ category }}">
+              <div class="alert alert-{{category}}">
                 {{ message }}
               </div>
             {% endfor %}
           {% endif %}
         {% endwith %}
-          {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
         </div>
         <div class="col-md-4">
           <div class="content-section">
