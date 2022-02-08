@@ -106,3 +106,6 @@ venv.bak/
 
 # XPress temp files
 *.glb
+
+# Word temp files
+~*

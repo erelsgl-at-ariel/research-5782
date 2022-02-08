@@ -15,7 +15,8 @@
 האלגוריתמים יכולים להשתלב בספרייה 
 [networkx](https://networkx.org/).
 
-* [Priority maximum matching (Turner, 2015)](https://arxiv.org/abs/1512.08555) -  ליחיד.
+* 
+* [Maximum priority matching (Turner, 2015)](https://arxiv.org/abs/1512.08555) -  ליחיד. אפשר לשלב עם [Faster Maximium Priority Matchings in Bipartite Graphs](https://arxiv.org/abs/1512.09349) לזוג.
 * [Cycle packing (Biro, Manlove and Rizzi, 2009)](https://www.worldscientific.com/doi/abs/10.1142/S1793830909000373) - 
 לזוג (או ליחיד בלי פרק 5)
 * [Envy-free matching (Aigner-Horev and Segal-Halevi, 2022)](https://www.sciencedirect.com/science/article/pii/S00200255210118) - לזוג.
