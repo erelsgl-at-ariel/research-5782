@@ -3,10 +3,11 @@
 # רשימת מאמרים
 
 לפניכם רשימת מאמרים לבחירה בנושאים שונים.
-שימו לב: אם אתם מתבקשים לשלם על הורדת המאמר, יש שתי אפשרויות להשיג את המאמר בלי לשלם:
+שימו לב: אם אתם מתבקשים לשלם על הורדת המאמר, יש כמה אפשרויות להשיג את המאמר בלי לשלם:
 
 * להוריד אותו דרך הספרייה. לספרייה יש מינוי על רוב כתבי-העת, וכסטודנטים באוניברסיטה יש לכם זכות להוריד מאמרים בחינם.
-* לחפש את כותרת המאמר ב [Google Scholar](https://scholar.google.com). רוב המאמרים מתפרסמים גם בדף-הבית של המחברים ואפשר להוריד אותם משם.
+* לחפש את כותרת המאמר ב [Google Scholar](https://scholar.google.com).
+* לחפש את המאמר בדף-הבית של המחברים.
 
 
 
@@ -15,7 +16,6 @@
 האלגוריתמים יכולים להשתלב בספרייה 
 [networkx](https://networkx.org/).
 
-* 
 * [Maximum priority matching (Turner, 2015)](https://arxiv.org/abs/1512.08555) -  ליחיד. אפשר לשלב עם [Faster Maximium Priority Matchings in Bipartite Graphs](https://arxiv.org/abs/1512.09349) לזוג.
 * [Cycle packing (Biro, Manlove and Rizzi, 2009)](https://www.worldscientific.com/doi/abs/10.1142/S1793830909000373) - 
 לזוג (או ליחיד בלי פרק 5)
@@ -99,12 +99,15 @@ SIAM Journal on Discrete Mathematics - ליחיד (אלגוריתמים 1, 2).
 * [Envy-freeness and Equitability with Monetary Transfers (Aziz, 2021)](https://ojs.aaai.org/index.php/AAAI/article/view/16645) - לזוג (אלגוריתמים 1, 2).
 
 
-## עוד אלגוריתמי אופטימיזציה
+## עוד אלגוריתמים
 
 * [Lexicographic minimax approach to location problems (Ogryczak, 1997)](https://www.sciencedirect.com/science/article/abs/pii/S0377221796001543) - לזוג.
 * [Equitable resource allocation - a lexicographic minimax approach (Luss, 1999)](https://pubsonline.informs.org/doi/abs/10.1287/opre.47.3.361) - ליחיד (פרקים 1--2) או לזוג (פרקים 1--3).
 * [Improved optimal solutions to max-min flexible constraint satisfaction (Dubois and Fortemps, 1999)](https://www-sciencedirect-com.mgs.ariel.ac.il/science/article/pii/S0377221798003075) - לזוג.
 * [The Sortedness and the Alldifferent Constraint (Mehlhorn and Thiel, 2000)](https://link.springer.com/chapter/10.1007/3-540-45349-0_23) - לזוג.
+* [Independent sets with domination constraints (Halldórsson, Kratochvíl, Telle; 1998)](https://www.sciencedirect.com/science/article/pii/S0166218X99001249)- לזוג.
+* [Improved Approximation for 3-Dimensional Matching via Bounded Pathwidth Local Search (Cygan, 2013)](https://arxiv.org/abs/1304.1424)- לזוג.
+* [Distributed Algorithms for Matching in Hypergraphs (Hanguir and Stein, 2009)](https://arxiv.org/abs/2009.09605)- לזוג.
 
 
 ## גיאומטריה חישובית
@@ -112,16 +115,36 @@ SIAM Journal on Discrete Mathematics - ליחיד (אלגוריתמים 1, 2).
 האלגוריתמים יכולים להשתלב באחת הספריות ל
 [גיאומטריה חישובית בפייתון](https://deeplearning.lipingyang.org/computational-geometry-in-python/).
 
-ניתן למצוא אלגוריתמים רבים ומעניינים בנושא זה בקישורים הבאים:
+מאמרים על  [כיסוי מצולעים](https://en.wikipedia.org/wiki/Polygon_covering):
 
-* [Polygon covering](https://en.wikipedia.org/wiki/Polygon_covering) - כיסוי מצולעים;
-* [Polygon partition](https://en.wikipedia.org/wiki/Polygon_partition) - חלוקת מצולעים;
-* [Guillotine partition](https://en.wikipedia.org/wiki/Guillotine_partition) - חלוקת גיליוטינה;
-* [Rectangle packing](https://en.wikipedia.org/wiki/Rectangle_packing) - אריזת מלבנים;
-* [Set packing](https://en.wikipedia.org/wiki/Set_packing) - אריזת קבוצות;
+* [A Linear-Time Algorithm for Covering Simple Polygons with Similar Rectangles (Bar-Yehuda and Ben-Hanoch, 1996)](https://doi.org/10.1142%2FS021819599600006X) - לזוג.
+* [Covering Regions by Rectangles (Chaiken, Kleitman, Saks, Shearer, 1981)](https://doi.org/10.1137%2F0602042) - לזוג.
+* [An algorithm for constructing regions with rectangles (Franzblau, Kleitman, 1984)](https://doi.org/10.1145/800057.808678) - לזוג.
+* [Rectangle covers revisited computationally (Heinrich-Litan and Lubbecke, 2007)](https://doi.org/10.1145/1187436.1216583) - לזוג.
+
+מאמרים על  [חלוקת מצולעים](https://en.wikipedia.org/wiki/Polygon_partition):
+
+* [Minimum edge length partitioning of rectilinear polygons (Lingas, Pinter, Rivest, Shamir, 1982)](https://people.csail.mit.edu/rivest/pubs/LPRS82.pdf) - ליחיד (פרקים 1--3).
+* [Graph-Theoretic Solutions to Computational Geometry Problems, Eppstein 2009](https://arxiv.org/abs/0908.3916) - לזוג.
+* [Counting Blanks in Polygonal Arrangements (Akopyan and Segal-Halevi, 2018)](https://arxiv.org/abs/1604.00960) - לזוג.
+* [Fast triangulation of simple polygons (Hertel, Mehlhorn, 1985)](https://www.sciencedirect.com/science/article/pii/S0019995885800449) - לזוג.
+
+
+מאמרים על [חיתוך בעזרת גיליוטינה](https://en.wikipedia.org/wiki/Guillotine_cutting):
+
+* [A Polynomial Time Algorithm For The Guillotine Pallet Loading Problem (Tarnowski, Terno, Scheithauer, 1994)](https://doi.org/10.1080/03155986.1994.11732257) - לזוג.
+* [Algorithms for Unconstrained Two-Dimensional Guillotine Cutting (Beasley; 1985)](https://doi.org/10.1057/jors.1985.51) - לזוג.
+* [Characterization and modelling of guillotine constraints (Ben Messaoud, Chu, Espinouse; 2008)](https://www.sciencedirect.com/science/article/abs/pii/S0377221707009083) - לזוג.
+* [Cutting Glass (Pach and Tardos, 2000)](https://doi.org/10.1007%2Fs004540010050) - לזוג.
+
+מאמרים על  [אריזת מלבנים](https://en.wikipedia.org/wiki/Rectangle_packing):
+
+* [An effective recursive partitioning approach for the packing of identical rectangles in a rectangle (Birgin, Lobato and Morabito, 2017)](https://www.tandfonline.com/doi/abs/10.1057/jors.2008.141?journalCode=tjor20) - לזוג (או ליחיד אם רק עוטפים את הקוד הקיים ב ++C).
+* [Optimal Rectangle Packing: An Absolute Placement Approach (Huang, Korf, 2013)](https://doi.org/10.1613%2Fjair.3735) - לזוג.
+
+מאמרים נוספים - רובם מתאימים לזוג - ניתן למצוא כאן:
+
 * [כנס לגיאומטריה חישובית - SOCG](https://drops.dagstuhl.de/opus/portals/lipics/index.php?semnr=16186).
-
-
 
 
 
