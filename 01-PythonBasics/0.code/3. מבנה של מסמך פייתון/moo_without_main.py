@@ -6,4 +6,5 @@ def function():
                       ||w--||     \|/
                                       \|/
                       moooooooooooooooooooo!""")
+
 function()

@@ -1,4 +1,4 @@
-def main():
+def function():
   print(f"""
                                  ------------
              \|/          (__)   | I'm  a   |
@@ -9,4 +9,4 @@ def main():
                     moooooooooooooooooooo!""")
 
 if __name__=="__main__":
-  main()
+  function()
