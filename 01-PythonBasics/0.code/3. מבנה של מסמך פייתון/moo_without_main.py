@@ -1,5 +1,5 @@
 def function(): 
-  print(f"""
+  print("""
                \|/          (__)    
                     `\------(oo)
                       ||    (__)

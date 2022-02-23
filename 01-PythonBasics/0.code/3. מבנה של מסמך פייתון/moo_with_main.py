@@ -1,5 +1,5 @@
 def function():
-  print(f"""
+  print("""
                                  ------------
              \|/          (__)   | I'm  a   |
                   `\------(oo)   | main cow | 
