@@ -21,7 +21,7 @@
 לזוג (או ליחיד בלי פרק 5)
 * [Envy-free matching (Aigner-Horev and Segal-Halevi, 2022)](https://www.sciencedirect.com/science/article/pii/S00200255210118) - לזוג.
 * ~[Fair division of a graph (Bouveret et al, 2017)](https://arxiv.org/abs/1705.10239) - (אלגוריתם 1) ליחיד~
-- תפוס
+ תפוס
 * [Fair integral network flow (Frank and Murota, 2022)](https://arxiv.org/abs/1907.02673) - לזוג.
 * [Rainbow matching (Gupta et al, 2019)](https://link.springer.com/article/10.1007/s00453-018-0497-3) - לזוג (פרקים 1--3) או ליחיד (פרקים 1--2).
 * [Dividing a Graphical Cake (Bei and Suksompong, 2019)](https://arxiv.org/pdf/1910.14129.pdf#subsection.4.1) - ליחיד (פרק 4).
