@@ -162,7 +162,8 @@ SIAM Journal on Discrete Mathematics - ליחיד (אלגוריתמים 1, 2).
 תפוס
 * [Beyond majority: Label ranking ensembles based on voting rules (Werbin-Ofir, Dery, Shmueli, 2019)](https://www.sciencedirect.com/science/article/pii/S0957417419304221) - ליחיד.
 * [BoostLR: a boosting-based learning ensemble for label ranking tasks (Dery and Shmueli, 2020)](https://ieeexplore.ieee.org/abstract/document/9205798/) - ליחיד.
-* [Reaching consensus under a deadline (Dery et al, 2021)](https://link.springer.com/article/10.1007/s10458-020-09490-7) - ליחיד.
+* ~[Reaching consensus under a deadline (Dery et al, 2021)](https://link.springer.com/article/10.1007/s10458-020-09490-7) - ליחיד.~
+תפוס
 
 
 
