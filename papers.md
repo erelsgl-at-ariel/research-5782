@@ -23,7 +23,7 @@
 * ~[Fair division of a graph (Bouveret et al, 2017)](https://arxiv.org/abs/1705.10239) - (אלגוריתם 1) ליחיד~
  תפוס
 * [Fair integral network flow (Frank and Murota, 2022)](https://arxiv.org/abs/1907.02673) - לזוג.
-* [Rainbow matching (Gupta et al, 2019)](https://link.springer.com/article/10.1007/s00453-018-0497-3) - לזוג (פרקים 1--3) או ליחיד (פרקים 1--2).
+* [Rainbow matching (Gupta et al, 2019)](https://link.springer.com/article/10.1007/s00453-018-0497-3) - לזוג (פרקים 1--3) או ליחיד (פרקים 1--2).   ***
 * [Dividing a Graphical Cake (Bei and Suksompong, 2019)](https://arxiv.org/pdf/1910.14129.pdf#subsection.4.1) - ליחיד (פרק 4).
 * [Fractional matchings (Bourjolly and Pulleyblank, 1989)](https://www.sciencedirect.com/science/article/pii/0166218X9290273D) - לזוג (או ליחיד בלי פרק 5).
 * [Maximum Weight Clique (Cai et al, 2021)](https://www.jair.org/index.php/jair/article/view/12327) - האלגוריתם כבר ממומש ב ++C; אפשר לתרגם אותו לפייתון (לזוג) או לעטוף אותו בפייתון (ליחיד).
