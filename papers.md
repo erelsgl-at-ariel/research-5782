@@ -55,7 +55,8 @@
 [fairpy](https://github.com/erelsgl/fairpy).
 
 * [Approximately Fair Allocations of Indivisible Goods (Lipton et al., 2004)](https://dl.acm.org/doi/pdf/10.1145/988772.988792) - ליחיד (משפטים 2.1, 3).
-* [Fair Division under Ordinal Preferences (Bouveret et al, 2010)](https://ebooks.iospress.nl/doi/10.3233/978-1-60750-606-5-387) - ליחיד.
+* ~[Fair Division under Ordinal Preferences (Bouveret et al, 2010)](https://ebooks.iospress.nl/doi/10.3233/978-1-60750-606-5-387) - ליחיד.~
+תפוס
 * [Worst-Case Allocations (Markakis and Psomas, 2011)](https://link.springer.com/chapter/10.1007/978-3-642-25510-6_24) - ליחיד (אלגוריתם 1).
 * [Proportional division of indivisible items (Brams et al, 2014)](https://mpra.ub.uni-muenchen.de/56587/) - ליחיד.
 * [Two-Person Fair Division of Indivisible Items (Brams et al, 2014)](https://www.ams.org/journals/notices/201402/rnoti-p130.pdf/) - ליחיד.
