@@ -63,7 +63,8 @@
 * [Proportional Borda allocations (Darmann and Klamler, 2016)](https://link.springer.com/article/10.1007/s00355-016-0982-z) - ליחיד.
 * [Chore division on a graph (Bouveret et al, 2019)](https://link.springer.com/article/10.1007/s10458-019-09415-z) - ליחיד.
 * [The Unreasonable Fairness of Maximum Nash Welfare (Caragiannis et al, 2019)](http://eprints.gla.ac.uk/123283/1/123283.pdf) - ליחיד.
-* [Fairly Allocating Many Goods with Few Queries (Oh et al, 2019)](https://doi.org/10.1609%2Faaai.v33i01.33012141) - ליחיד.
+* ~[Fairly Allocating Many Goods with Few Queries (Oh et al, 2019)](https://doi.org/10.1609%2Faaai.v33i01.33012141) - ליחיד.~
+תפוס
 * [Maximin-Aware Allocations of Indivisible Goods (Chan et al, 2019)](https://arxiv.org/abs/1905.09969) - ליחיד.
 * [Beating 1/2 for EFX and GMMS (Amanatidis et al, 2020)](https://doi.org/10.1016%2Fj.tcs.2020.07.006) - ליחיד.
 * [The Virtue of Donating Items (Caragiannis et al, 2019)](https://arxiv.org/abs/1902.04319) - ליחיד.
