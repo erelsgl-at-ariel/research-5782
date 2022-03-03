@@ -76,7 +76,8 @@
 * [Equitable Allocations of Indivisible Goods (Freeman et al, 2019)](https://arxiv.org/abs/1905.10656) - ליחיד (משפטים 2, 3).
 * [Almost Envy-Freeness with General Valuations (Plaut and Roughgarden, 2020)](https://dl.acm.org/doi/abs/10.1145/3140756).
 SIAM Journal on Discrete Mathematics - ליחיד (אלגוריתמים 1, 2).
-* [A note on the undercut procedure (Aziz 2015)](https://link.springer.com/article/10.1007/s00355-015-0877-4) - ליחיד.
+* ~[A note on the undercut procedure (Aziz 2015)](https://link.springer.com/article/10.1007/s00355-015-0877-4) - ליחיד.~
+תפוס
 * [Fair Division of Goods in the Shadow of Market Values (Dall'Aglio, 2021)](https://arxiv.org/abs/1910.01615) - ליחיד.
 * [The Combinatorial Assignment Problem (Budish, 2011)](https://doi.org/10.1086%2F664613) - לזוג.
 * [Minimizing envy and maximizing average Nash social welfare (Nguyen and Rothe, 2014)](https://doi.org/10.1137%2F0117039) - לזוג.
