@@ -40,7 +40,8 @@
 * [Approximation schemes for scheduling on parallel machines (Alon et al, 1998)](https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291099-1425%28199806%291%3A1%3C55%3A%3AAID-JOS2%3E3.0.CO%3B2-J) - לזוג (פרקים 1--4) או ליחיד (פרקים 1--2). ***
 * ~[A complete anytime algorithm for balanced number partitioning (Mertens, 1999)](https://arxiv.org/abs/cs/9903011) -  ליחיד.~
 תפוס
-* [Multi-way number-partitioning (Korf, 2009)](http://ijcai.org/papers09/Papers/IJCAI09-096.pdf) - לזוג.
+* ~[Multi-way number-partitioning (Korf, 2009)](http://ijcai.org/papers09/Papers/IJCAI09-096.pdf) - לזוג.~
+תפוס
 * ~[Hybrid recursive number partitioning (Korf, 2011)](https://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/viewPaper/3364) - לזוג.~
 תפוס
 * [Improved bin completion (Schreiber and Korf, 2013)](https://www.ijcai.org/Proceedings/13/Papers/103.pdf) - לזוג.
