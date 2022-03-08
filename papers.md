@@ -60,7 +60,8 @@
 תפוס
 * [Worst-Case Allocations (Markakis and Psomas, 2011)](https://link.springer.com/chapter/10.1007/978-3-642-25510-6_24) - ליחיד (אלגוריתם 1).
 * [Proportional division of indivisible items (Brams et al, 2014)](https://mpra.ub.uni-muenchen.de/56587/) - ליחיד.
-* [Two-Person Fair Division of Indivisible Items (Brams et al, 2014)](https://www.ams.org/journals/notices/201402/rnoti-p130.pdf/) - ליחיד.
+* ~[Two-Person Fair Division of Indivisible Items (Brams et al, 2014)](https://www.ams.org/journals/notices/201402/rnoti-p130.pdf/) - ליחיד.~
+תפוס
 * [Proportional Borda allocations (Darmann and Klamler, 2016)](https://link.springer.com/article/10.1007/s00355-016-0982-z) - ליחיד.
 * [Chore division on a graph (Bouveret et al, 2019)](https://link.springer.com/article/10.1007/s10458-019-09415-z) - ליחיד.
 * [The Unreasonable Fairness of Maximum Nash Welfare (Caragiannis et al, 2019)](http://eprints.gla.ac.uk/123283/1/123283.pdf) - ליחיד.
