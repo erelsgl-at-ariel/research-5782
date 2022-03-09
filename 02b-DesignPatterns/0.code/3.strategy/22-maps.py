@@ -1,5 +1,8 @@
 """
-    Number partitioning algorithms - naive implementation - both lists and dicts
+Number partitioning algorithms - naive implementation - accepts both dicts and lists.
+
+Author: Erel Segal-Halevi
+Since: 2022-03
 """
 
 from typing import Dict

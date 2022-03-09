@@ -1,5 +1,8 @@
 """
-    Number partitioning algorithms - naive implementation - lists
+Number partitioning algorithms - naive implementation - accepts lists as input.
+
+Author: Erel Segal-Halevi
+Since: 2022-03
 """
 
 from typing import List
