@@ -41,14 +41,14 @@ def roundrobin_sums(numbins: int, items: List[float]):
     return sums
 
 
-def greedy(numbins: int, items: List[float]):
+def greedy_partition(numbins: int, items: List[float]):
     """
     Partition the given items using the greedy number partitioning algorithm.
     Return the partition.
 
-    >>> greedy(numbins=2, items=[1,2,3,3,5,9,9])
+    >>> greedy_partition(numbins=2, items=[1,2,3,3,5,9,9])
     [[9, 5, 2], [9, 3, 3, 1]]
-    >>> greedy(numbins=3, items=[1,2,3,3,5,9,9])
+    >>> greedy_partition(numbins=3, items=[1,2,3,3,5,9,9])
     [[9, 2], [9, 1], [5, 3, 3]]
     """
     bins = [[] for _ in range(numbins)]
@@ -75,9 +75,23 @@ def greedy_sums(numbins: int, items: List[float]):
     return sums
 
 
+def benchmark(numbins: int, numitems: int):
+    import numpy as np, time
+    items = np.random.randint(1, 1000, numitems)
+    t0 = time.time()
+    greedy_partition(numbins, items)
+    t1 = time.time()
+    greedy_sums(numbins, items)
+    t2 = time.time()
+    print(f"{numbins} bins, {numitems} items: greedy_partition={t1-t0}. greedy_sums={t2-t1}.")
+
 
 if __name__ == "__main__":
     import doctest
 
     (failures, tests) = doctest.testmod(report=True)
     print("{} failures, {} tests".format(failures, tests))
+
+    numbins=3
+    for numitems in [100, 1000, 10000, 20000, 40000]:
+        benchmark(numbins, numitems)
