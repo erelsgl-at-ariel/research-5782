@@ -37,7 +37,8 @@
 האלגוריתמים יכולים להשתלב בספרייה 
 [prtpy](https://github.com/erelsgl/prtpy).
 
-* [An Application of Bin-Packing to Multiprocessor Scheduling (Coffman et al, 1978)](https://epubs.siam.org/doi/abs/10.1137/0207001) - ליחיד.
+* ~[An Application of Bin-Packing to Multiprocessor Scheduling (Coffman et al, 1978)](https://epubs.siam.org/doi/abs/10.1137/0207001) - ליחיד.~
+תפוס
 * [Using dual approximation algorithms for scheduling problems (Hochbaum and Shomys, 1987)](https://doi.org/10.1145/7531.7535) - לזוג (פרקים 1--4, עמודים 1--12)
 * ~[Approximation schemes for scheduling on parallel machines (Alon et al, 1998)](https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291099-1425%28199806%291%3A1%3C55%3A%3AAID-JOS2%3E3.0.CO%3B2-J) - לזוג (פרקים 1--4) או ליחיד (פרקים 1--2). ~
 חצי תפוס
