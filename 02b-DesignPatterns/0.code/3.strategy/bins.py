@@ -22,6 +22,10 @@ class Bins(ABC):
         pass
 
     @abstractmethod
+    def add_itemvalue_to_bin(self, item: Any, value: float, bin_index: int):
+        pass
+
+    @abstractmethod
     def result(self):
         return None
 
@@ -37,6 +41,9 @@ class BinsKeepingSums(Bins):
     def add_item_to_bin(self, item: float, bin_index: int):
         self.sums[bin_index] += item
 
+    def add_itemvalue_to_bin(self, item: Any, value: float, bin_index: int):
+        self.sums[bin_index] += value
+
     def result(self):
         return self.sums
 
@@ -51,6 +58,10 @@ class BinsKeepingContents(BinsKeepingSums):
 
     def add_item_to_bin(self, item: float, bin_index: int):
         super().add_item_to_bin(item, bin_index)
+        self.bins[bin_index].append(item)
+
+    def add_itemvalue_to_bin(self, item: Any, value: float, bin_index: int):
+        super().add_itemvalue_to_bin(item, value, bin_index)
         self.bins[bin_index].append(item)
 
     def result(self):
