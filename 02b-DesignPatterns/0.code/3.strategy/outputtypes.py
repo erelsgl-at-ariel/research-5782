@@ -13,14 +13,14 @@ class OutputType(ABC):
         """
         Construct and return a Bins structure. Used at the initialization phase of an algorithm.
         """
-        raise NotImplementedError("Choose a specific output type")
+        pass
 
     @classmethod
     def extract_output_from_bins(cls, bins: Bins) -> Any:
         """
         Return the required output from the given list of filled bins.
         """
-        raise NotImplementedError("Choose a specific output type")
+        pass
 
 
 class Sums(OutputType):

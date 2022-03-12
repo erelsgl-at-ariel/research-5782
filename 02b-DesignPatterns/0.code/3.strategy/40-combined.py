@@ -43,6 +43,7 @@ def partition(algorithm: Callable, numbins: int, items: list, outputtype: out.Ou
         item_names = items
         map_item_to_value = lambda item: item
     bins = outputtype.create_empty_bins(numbins)
+    bins.set_map_item_to_value(map_item_to_value)
     algorithm(bins, item_names, map_item_to_value)
     return outputtype.extract_output_from_bins(bins)
 
@@ -57,7 +58,7 @@ def roundrobin(bins: Bins, item_names: list, map_item_to_value: Callable[[Any], 
     """
     ibin = 0
     for item in sorted(item_names, key=map_item_to_value, reverse=True):
-        bins.add_itemvalue_to_bin(item, map_item_to_value(item), ibin)
+        bins.add_item_to_bin(item, ibin)
         ibin = (ibin+1) % bins.num
     return bins
 
@@ -73,7 +74,7 @@ def greedy(bins: Bins, item_names: list, map_item_to_value: Callable[[Any], floa
     """
     for item in sorted(item_names, key=map_item_to_value, reverse=True):
         index_of_least_full_bin = min(range(bins.num), key=lambda i: bins.sums[i])
-        bins.add_itemvalue_to_bin(item, map_item_to_value(item), index_of_least_full_bin)
+        bins.add_item_to_bin(item, index_of_least_full_bin)
     return bins
 
 

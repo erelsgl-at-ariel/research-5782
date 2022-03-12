@@ -6,7 +6,7 @@ Since:  2022-02
 """
 
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import Any, Callable
 
 
 class Bins(ABC):
@@ -16,13 +16,13 @@ class Bins(ABC):
 
     def __init__(self, numbins: int):
         self.num = numbins
+        self.map_item_to_value = lambda x: x
+
+    def set_map_item_to_value(self, new_map_item_to_value: Callable):
+        self.map_item_to_value = new_map_item_to_value
 
     @abstractmethod
     def add_item_to_bin(self, item: float, bin_index: int):
-        pass
-
-    @abstractmethod
-    def add_itemvalue_to_bin(self, item: Any, value: float, bin_index: int):
         pass
 
     @abstractmethod
@@ -39,10 +39,7 @@ class BinsKeepingSums(Bins):
         self.sums = numbins*[0]
 
     def add_item_to_bin(self, item: float, bin_index: int):
-        self.sums[bin_index] += item
-
-    def add_itemvalue_to_bin(self, item: Any, value: float, bin_index: int):
-        self.sums[bin_index] += value
+        self.sums[bin_index] += self.map_item_to_value(item)
 
     def result(self):
         return self.sums
@@ -58,10 +55,6 @@ class BinsKeepingContents(BinsKeepingSums):
 
     def add_item_to_bin(self, item: float, bin_index: int):
         super().add_item_to_bin(item, bin_index)
-        self.bins[bin_index].append(item)
-
-    def add_itemvalue_to_bin(self, item: Any, value: float, bin_index: int):
-        super().add_itemvalue_to_bin(item, value, bin_index)
         self.bins[bin_index].append(item)
 
     def result(self):
