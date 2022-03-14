@@ -28,7 +28,8 @@
 חצי תפוס
 * [Dividing a Graphical Cake (Bei and Suksompong, 2019)](https://arxiv.org/pdf/1910.14129.pdf#subsection.4.1) - ליחיד (פרק 4).
 * [Fractional matchings (Bourjolly and Pulleyblank, 1989)](https://www.sciencedirect.com/science/article/pii/0166218X9290273D) - לזוג (או ליחיד בלי פרק 5).
-* [Maximum Weight Clique (Cai et al, 2021)](https://www.jair.org/index.php/jair/article/view/12327) - האלגוריתם כבר ממומש ב ++C; אפשר לתרגם אותו לפייתון (לזוג) או לעטוף אותו בפייתון (ליחיד).
+* ~[Maximum Weight Clique (Cai et al, 2021)](https://www.jair.org/index.php/jair/article/view/12327) - האלגוריתם כבר ממומש ב ++C; אפשר לתרגם אותו לפייתון (לזוג) או לעטוף אותו בפייתון (ליחיד).~
+תפוס
 
 
 ## אלגוריתמי תזמון תהליכים וחלוקת מספרים
