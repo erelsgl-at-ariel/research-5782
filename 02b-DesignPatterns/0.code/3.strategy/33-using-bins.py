@@ -36,7 +36,7 @@ def greedy(bins: Bins, items: List[float]):
     [[9, 5, 2], [9, 3, 3, 1]]
     """
     for item in sorted(items, reverse=True):
-        index_of_least_full_bin = min(range(bins.num), key=lambda i: bins.sums[i])
+        index_of_least_full_bin = min(range(bins.num), key=bins.sums.__getitem__)
         bins.add_item_to_bin(item, index_of_least_full_bin)
     return bins.result()
 

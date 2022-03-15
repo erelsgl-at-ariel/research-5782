@@ -7,13 +7,13 @@ Since: 2022-03
 
 from typing import List
 
-def roundrobin(numbins: int, items: List[float]):
+def roundrobin_partition(numbins: int, items: List[float]):
     """
     Partition the given items using the round-robin algorithm.
 
-    >>> roundrobin(numbins=2, items=[1,2,3,3,5,9,9])
+    >>> roundrobin_partition(numbins=2, items=[1,2,3,3,5,9,9])
     [[9, 5, 3, 1], [9, 3, 2]]
-    >>> roundrobin(numbins=3, items=[1,2,3,3,5,9,9])
+    >>> roundrobin_partition(numbins=3, items=[1,2,3,3,5,9,9])
     [[9, 3, 1], [9, 3], [5, 2]]
     """
     bins = [[] for _ in range(numbins)]
@@ -57,6 +57,25 @@ def greedy_partition(numbins: int, items: List[float]):
         bins[index_of_least_full_bin].append(item)
     return bins
 
+def greedy_partition_2(numbins: int, items: List[float]):
+    """
+    Partition the given items using the greedy number partitioning algorithm.
+    Return the partition.
+    Based on code review by Richard Neumann: https://codereview.stackexchange.com/a/274775/20684
+
+    >>> greedy_partition(numbins=2, items=[1,2,3,3,5,9,9])
+    [[9, 5, 2], [9, 3, 3, 1]]
+    >>> greedy_partition(numbins=3, items=[1,2,3,3,5,9,9])
+    [[9, 2], [9, 1], [5, 3, 3]]
+    """
+    bins = [[] for _ in range(numbins)]
+    sums = [0 for _ in range(numbins)]
+    for item in sorted(items, reverse=True):
+        index_of_least_full_bin = min(range(numbins), key=sums.__getitem__)
+        bins[index_of_least_full_bin].append(item)
+        sums[index_of_least_full_bin] += item
+    return bins
+
 
 def greedy_sums(numbins: int, items: List[float]):
     """
@@ -70,7 +89,7 @@ def greedy_sums(numbins: int, items: List[float]):
     """
     sums = [0 for _ in range(numbins)]
     for item in sorted(items, reverse=True):
-        index_of_least_full_bin = min(range(numbins), key=lambda i: sums[i])
+        index_of_least_full_bin = min(range(numbins), key=sums.__getitem__)  # faster than key=lambda i: sums[i]
         sums[index_of_least_full_bin] += item
     return sums
 
@@ -79,7 +98,7 @@ def benchmark(numbins: int, numitems: int):
     import numpy as np, time
     items = np.random.randint(1, 1000, numitems)
     t0 = time.time()
-    greedy_partition(numbins, items)
+    greedy_partition_2(numbins, items)
     t1 = time.time()
     greedy_sums(numbins, items)
     t2 = time.time()
@@ -93,5 +112,5 @@ if __name__ == "__main__":
     print("{} failures, {} tests".format(failures, tests))
 
     numbins=3
-    for numitems in [100, 1000, 10000, 20000, 40000]:
+    for numitems in map(lambda x: 2**x, range(10,25)):
         benchmark(numbins, numitems)

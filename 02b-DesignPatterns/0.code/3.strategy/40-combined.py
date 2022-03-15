@@ -38,7 +38,7 @@ def partition(algorithm: Callable, numbins: int, items: list, outputtype: out.Ou
     """    
     if isinstance(items, dict):  # items is a dict mapping an item to its value.
         item_names = items.keys()
-        map_item_to_value = lambda item: items[item]
+        map_item_to_value = items.__getitem__
     else:  # items is a list
         item_names = items
         map_item_to_value = lambda item: item

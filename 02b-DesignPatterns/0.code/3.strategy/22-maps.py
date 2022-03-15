@@ -23,7 +23,7 @@ def roundrobin(numbins: int, items: Dict[str, float]):
     """
     if isinstance(items, dict):  # items is a dict mapping an item to its value.
         item_names = items.keys()
-        map_item_to_value = lambda item: items[item]
+        map_item_to_value = items.__getitem__ # lambda item: items[item]
     else:  # items is a list
         item_names = items
         map_item_to_value = lambda item: item
