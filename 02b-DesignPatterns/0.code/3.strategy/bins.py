@@ -16,10 +16,10 @@ class Bins(ABC):
 
     def __init__(self, numbins: int):
         self.num = numbins
-        self.map_item_to_value = lambda x: x
+        self.valueof = lambda x: x
 
-    def set_map_item_to_value(self, new_map_item_to_value: Callable):
-        self.map_item_to_value = new_map_item_to_value
+    def set_valueof(self, new_valueof: Callable):
+        self.valueof = new_valueof
 
     @abstractmethod
     def add_item_to_bin(self, item: float, bin_index: int):
@@ -39,7 +39,7 @@ class BinsKeepingSums(Bins):
         self.sums = numbins*[0]
 
     def add_item_to_bin(self, item: float, bin_index: int):
-        self.sums[bin_index] += self.map_item_to_value(item)
+        self.sums[bin_index] += self.valueof(item)
 
     def result(self):
         return self.sums

@@ -32,14 +32,14 @@ def partition(algorithm: Callable, numbins: int, items: list):
     """    
     if isinstance(items, dict):  # items is a dict mapping an item to its value.
         item_names = items.keys()
-        map_item_to_value = items.__getitem__
+        valueof = items.__getitem__
     else:  # items is a list
         item_names = items
-        map_item_to_value = lambda item: item
-    return algorithm(numbins, item_names, map_item_to_value)
+        valueof = lambda item: item
+    return algorithm(numbins, item_names, valueof)
 
 
-def roundrobin(numbins: int, item_names: list, map_item_to_value: Callable[[Any], float] = lambda x:x):
+def roundrobin(numbins: int, item_names: list, valueof: Callable[[Any], float] = lambda x:x):
     """
     Partition the given items using the round-robin algorithm.
     >>> roundrobin(numbins=2, item_names=[1,2,3,3,5,9,9])
@@ -49,13 +49,13 @@ def roundrobin(numbins: int, item_names: list, map_item_to_value: Callable[[Any]
     """
     bins = [[] for _ in range(numbins)]
     ibin = 0
-    for item in sorted(item_names, key=map_item_to_value, reverse=True):
+    for item in sorted(item_names, key=valueof, reverse=True):
         bins[ibin].append(item)
         ibin = (ibin+1) % numbins
     return bins
 
 
-def greedy(numbins: int, item_names: list, map_item_to_value: Callable[[Any], float] = lambda x:x):
+def greedy(numbins: int, item_names: list, valueof: Callable[[Any], float] = lambda x:x):
     """
     Partition the given items using the greedy number partitioning algorithm.
 
@@ -66,10 +66,10 @@ def greedy(numbins: int, item_names: list, map_item_to_value: Callable[[Any], fl
     """
     bins = [[] for _ in range(numbins)]
     sums = [0 for _ in range(numbins)]
-    for item in sorted(item_names, key=map_item_to_value, reverse=True):
+    for item in sorted(item_names, key=valueof, reverse=True):
         index_of_least_full_bin = min(range(numbins), key=lambda i: sums[i])
         bins[index_of_least_full_bin].append(item)
-        sums[index_of_least_full_bin] += map_item_to_value(item)
+        sums[index_of_least_full_bin] += valueof(item)
     return bins
 
 

@@ -38,17 +38,17 @@ def partition(algorithm: Callable, numbins: int, items: list, outputtype: out.Ou
     """    
     if isinstance(items, dict):  # items is a dict mapping an item to its value.
         item_names = items.keys()
-        map_item_to_value = items.__getitem__
+        valueof = items.__getitem__
     else:  # items is a list
         item_names = items
-        map_item_to_value = lambda item: item
+        valueof = lambda item: item
     bins = outputtype.create_empty_bins(numbins)
-    bins.set_map_item_to_value(map_item_to_value)
-    algorithm(bins, item_names, map_item_to_value)
+    bins.set_valueof(valueof)
+    algorithm(bins, item_names, valueof)
     return outputtype.extract_output_from_bins(bins)
 
 
-def roundrobin(bins: Bins, item_names: list, map_item_to_value: Callable[[Any], float] = lambda x:x):
+def roundrobin(bins: Bins, item_names: list, valueof: Callable[[Any], float] = lambda x:x):
     """
     Partition the given items using the round-robin algorithm.
     >>> roundrobin(BinsKeepingContents(2), item_names=[1,2,3,3,5,9,9]).bins
@@ -57,13 +57,13 @@ def roundrobin(bins: Bins, item_names: list, map_item_to_value: Callable[[Any], 
     [[9, 3, 1], [9, 3], [5, 2]]
     """
     ibin = 0
-    for item in sorted(item_names, key=map_item_to_value, reverse=True):
+    for item in sorted(item_names, key=valueof, reverse=True):
         bins.add_item_to_bin(item, ibin)
         ibin = (ibin+1) % bins.num
     return bins
 
 
-def greedy(bins: Bins, item_names: list, map_item_to_value: Callable[[Any], float] = lambda x:x):
+def greedy(bins: Bins, item_names: list, valueof: Callable[[Any], float] = lambda x:x):
     """
     Partition the given items using the greedy number partitioning algorithm.
 
@@ -72,7 +72,7 @@ def greedy(bins: Bins, item_names: list, map_item_to_value: Callable[[Any], floa
     >>> greedy(BinsKeepingContents(3), item_names=[1,2,3,3,5,9,9]).bins
     [[9, 2], [9, 1], [5, 3, 3]]
     """
-    for item in sorted(item_names, key=map_item_to_value, reverse=True):
+    for item in sorted(item_names, key=valueof, reverse=True):
         index_of_least_full_bin = min(range(bins.num), key=lambda i: bins.sums[i])
         bins.add_item_to_bin(item, index_of_least_full_bin)
     return bins

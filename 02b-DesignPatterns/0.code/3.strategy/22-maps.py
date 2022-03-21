@@ -23,14 +23,14 @@ def roundrobin(numbins: int, items: Dict[str, float]):
     """
     if isinstance(items, dict):  # items is a dict mapping an item to its value.
         item_names = items.keys()
-        map_item_to_value = items.__getitem__ # lambda item: items[item]
+        valueof = items.__getitem__ # lambda item: items[item]
     else:  # items is a list
         item_names = items
-        map_item_to_value = lambda item: item
+        valueof = lambda item: item
 
     bins = [[] for _ in range(numbins)]
     ibin = 0
-    for item in sorted(item_names, key=map_item_to_value, reverse=True):
+    for item in sorted(item_names, key=valueof, reverse=True):
         bins[ibin].append(item)
         ibin = (ibin+1) % numbins
     return bins
@@ -53,17 +53,17 @@ def greedy(numbins: int, items: Dict[str, float]):
     """
     if isinstance(items, dict):  # items is a dict mapping an item to its value.
         item_names = items.keys()
-        map_item_to_value = lambda item: items[item]
+        valueof = lambda item: items[item]
     else:  # items is a list
         item_names = items
-        map_item_to_value = lambda item: item
+        valueof = lambda item: item
 
     bins = [[] for _ in range(numbins)]
     sums = [0 for _ in range(numbins)]
-    for item in sorted(item_names, key=map_item_to_value, reverse=True):
+    for item in sorted(item_names, key=valueof, reverse=True):
         index_of_least_full_bin = min(range(numbins), key=lambda i: sums[i])
         bins[index_of_least_full_bin].append(item)
-        sums[index_of_least_full_bin] += map_item_to_value(item)
+        sums[index_of_least_full_bin] += valueof(item)
     return bins
 
 
