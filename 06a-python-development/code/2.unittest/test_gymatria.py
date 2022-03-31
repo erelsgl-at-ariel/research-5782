@@ -61,4 +61,4 @@ class TestGymatria(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
     # Alternatively, run from the command line:
-    # pytest
+    # python -m unittest test_gymatria.py
