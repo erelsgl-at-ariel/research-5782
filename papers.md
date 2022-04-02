@@ -65,8 +65,7 @@
 * [Approximately Fair Allocations of Indivisible Goods (Lipton et al., 2004)](https://dl.acm.org/doi/pdf/10.1145/988772.988792) - ליחיד (משפטים 2.1, 3).
 * ~[Fair Division under Ordinal Preferences (Bouveret et al, 2010)](https://ebooks.iospress.nl/doi/10.3233/978-1-60750-606-5-387) - ליחיד.~
 תפוס
-* ~[Worst-Case Allocations (Markakis and Psomas, 2011)](https://link.springer.com/chapter/10.1007/978-3-642-25510-6_24) - ליחיד (אלגוריתם 1).~
-תפוס
+* [Worst-Case Allocations (Markakis and Psomas, 2011)](https://link.springer.com/chapter/10.1007/978-3-642-25510-6_24) - ליחיד (אלגוריתם 1).
 * [Proportional division of indivisible items (Brams et al, 2014)](https://mpra.ub.uni-muenchen.de/56587/) - ליחיד.
 * ~[Two-Person Fair Division of Indivisible Items (Brams et al, 2014)](https://www.ams.org/journals/notices/201402/rnoti-p130.pdf/) - ליחיד.~
 תפוס
@@ -75,7 +74,8 @@
 * [The Unreasonable Fairness of Maximum Nash Welfare (Caragiannis et al, 2019)](http://eprints.gla.ac.uk/123283/1/123283.pdf) - ליחיד.
 * ~[Fairly Allocating Many Goods with Few Queries (Oh et al, 2019)](https://doi.org/10.1609%2Faaai.v33i01.33012141) - ליחיד.~
 תפוס
-* [Maximin-Aware Allocations of Indivisible Goods (Chan et al, 2019)](https://arxiv.org/abs/1905.09969) - ליחיד.
+* ~[Maximin-Aware Allocations of Indivisible Goods (Chan et al, 2019)](https://arxiv.org/abs/1905.09969) - ליחיד.~
+תפוס
 * [Beating 1/2 for EFX and GMMS (Amanatidis et al, 2020)](https://doi.org/10.1016%2Fj.tcs.2020.07.006) - ליחיד.
 * [The Virtue of Donating Items (Caragiannis et al, 2019)](https://arxiv.org/abs/1902.04319) - ליחיד.
 * [Approximation Algorithms for Maximin Fair Division (Barman and Krishnamurthy, 2020)](https://dl.acm.org/doi/abs/10.1145/3381525) - ליחיד (אלגוריתמים 1, 2, 5). 
