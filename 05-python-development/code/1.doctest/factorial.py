@@ -57,5 +57,5 @@ if __name__ == "__main__":
     # doctest.testmod(verbose=True)    
 
     # To run tests from a file:
-    # print(doctest.testfile("my_doctest.txt"))
+    print(doctest.testfile("my_doctest.txt"))
 
