@@ -6,6 +6,17 @@ import math
 
 
 def find_shortest_path(distances:list)->list:
+	"""
+	Brute-force solution of the traveling salesman problem.
+
+	>>> distances = [
+	...		[0,2,3],
+	...		[4,0,6],
+	...		[7,8,0]
+	...	]
+	>>> print(find_shortest_path(distances), flush=True)
+	1 --4--> 0 --3--> 2: == 7
+	"""
 	num_of_towns = len(distances)
 	shortest_distance_so_far = math.inf
 	shortest_path_so_far = None
@@ -33,13 +44,8 @@ def find_shortest_path(distances:list)->list:
 
 
 if __name__=="__main__":
-		
-	distances = [
-		[0,2,3],
-		[4,0,6],
-		[7,8,0]
-	]
-	print(find_shortest_path(distances), flush=True)
+	import doctest
+	print(doctest.testmod())
 
 	distances = [
 		[1,0,3,4,5,6,7,8,9,10,11],

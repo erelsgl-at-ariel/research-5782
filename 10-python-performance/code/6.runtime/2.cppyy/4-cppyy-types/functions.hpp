@@ -8,40 +8,51 @@
 #include <numeric>
 using namespace std;
 
-int sum(const vector<int>& v) {
+int sum(const vector<int> &v)
+{
     cout << "sum vector" << endl;
     return accumulate(begin(v), end(v), 0);
 }
 
-int sum(const vector<vector<int>>& mat) {
+int sum(const vector<vector<int>> &mat)
+{
     cout << "sum matrix" << endl;
-    int result=0;
-    for (auto v: mat)
+    int result = 0;
+    for (auto v : mat)
         result += accumulate(begin(v), end(v), 0);
     return result;
 }
 
-int sum(const set<int>& v) {
+int sum(const set<int> &v)
+{
     cout << "sum set" << endl;
     return accumulate(begin(v), end(v), 0);
 }
 
-int sumset(const set<int>& v) {
+int sumset(const set<int> &v)
+{
     cout << "sumset" << endl;
     return accumulate(begin(v), end(v), 0);
 }
 
-int sum(const unordered_set<int>& v) {
+int sum(const unordered_set<int> &v)
+{
     cout << "sum unordered_set" << endl;
     return accumulate(begin(v), end(v), 0);
 }
 
-int sum(const map<int,int>& v) {
-    cout << "sum map" << endl;
-    return 56;
+int summap(const map<int, int> &v)
+{
+    cout << "summap" << endl;
+    int s = 0;
+    for (const auto &[key, val] : v)
+    {
+        s += key + val;
+    }
+    return s;
 }
 
-int summap(const map<int,int>& v) {
-    cout << "summap" << endl;
-    return 56;
+int sum(const map<int, int> &v)
+{
+    return summap(v);
 }

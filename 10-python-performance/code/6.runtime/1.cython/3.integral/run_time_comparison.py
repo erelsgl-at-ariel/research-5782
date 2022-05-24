@@ -1,13 +1,11 @@
-#import integrate as pyint
-#import c_integrate as c_int
 import timeit
 
-cy = timeit.timeit('integrate(20,30,10000)',
-                    setup='from cy_integrate import integrate',
+cy = timeit.timeit('cy_integrate.integrate(20,30,10000)',
+                    setup='import cy_integrate',
                     number = 1000 )
 
-py = timeit.timeit('integrate(20,30,10000)',
-                    setup='from py_integrate import integrate',
+py = timeit.timeit('py_integrate.integrate(20,30,10000)',
+                    setup='import py_integrate',
                     number = 1000 )
 
 print(f'cy = {cy}')
