@@ -4,7 +4,7 @@ import time
 
 x = np.arange(1000000).reshape(1000, 1000)
 
-@jit(nopython=True)
+@jit(nopython=True)  # nopython means that the python interpreter is not used in compiling this function. It is faster, but might not know some Python objects.
 def go_fast(a): # Function is compiled and runs in machine code
     trace = 0.0
     for i in range(a.shape[0]):
