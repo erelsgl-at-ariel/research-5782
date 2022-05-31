@@ -7,11 +7,13 @@ from flask_example.forms import DataForm, LoginForm
 
 
 @app.route('/')
-def home():
-    return render_template('home.html', username=home.username, homepage=home.homepage)
-home.username = "Anonymous"
-home.homepage = None
+def myhome():
+    return render_template('home.html', username=myhome.username, homepage=myhome.homepage)
+myhome.username = "Anonymous"
+myhome.homepage = None
 
+def password_is_valid(username,password):
+    return password=="123"
 
 @app.route('/login', methods=['GET', 'POST'])
 def loginform():
@@ -23,8 +25,12 @@ def loginform():
     if not is_submitted:
         return render_template('login.html', form=form)
     else:
-        home.username = form.username.data
-        return redirect(url_for("home"))
+        if password_is_valid(form.username.data, form.password.data):
+            flash(f'Welcome, {form.username.data}!', 'success')
+            myhome.username = form.username.data
+        else:
+            flash(f'Wrong password, {form.username.data}!', 'danger')
+        return redirect(url_for(myhome.__name__))
 
 @app.route("/data", methods=['GET', 'POST'])
 def data():
@@ -32,6 +38,5 @@ def data():
     if not form.validate_on_submit():
         return render_template('data.html', title='Data', form=form)
     else:
-        flash(f'Data submitted for {form.username.data}!', 'success')
-        home.homepage = form.homepage.data
-        return redirect(url_for('home'))
+        myhome.homepage = form.homepage.data
+        return redirect(url_for(myhome.__name__))
