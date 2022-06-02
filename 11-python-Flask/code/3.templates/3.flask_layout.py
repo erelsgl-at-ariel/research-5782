@@ -8,6 +8,9 @@ users = [
     {'name': 'Tom Pythonovitch',
     'email': 'python_is_coool@example.com',
     'phone': '222-2222'},
+    {'name': 'abc',
+    'email': 'xyz',
+    'phone': '123'},
 ]
 
 @app.route('/')
