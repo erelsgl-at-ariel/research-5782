@@ -1,5 +1,6 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import render_template
+from flask_example import app
+
 
 users = [
     {'name': 'Joee Javany',
@@ -8,11 +9,11 @@ users = [
     {'name': 'Tom Pythonovitch',
     'email': 'python_is_coool@example.com',
     'phone': '222-2222'},
+    {'name': 'abc',
+    'email': 'xyz',
+    'phone': '123'},
 ]
 
 @app.route('/')
-def hello_world():
-    return render_template('homedynamic.html' , users = users)
-
-if __name__ == '__main__':
-    app.run(debug = True)
+def myhome():
+    return render_template('home.html')
